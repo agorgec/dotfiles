@@ -4,11 +4,13 @@ end
 
 starship init fish | source
 
+fish_add_path /opt/nvim-linux-x86_64/bin
+
 # Set env variable (export)
 set -x PROJECTS /mnt/Projects
 
 # Alias
-alias launcher="conda activate launcher; python /home/agorgec/workspace/proj_launcher/python3.11libs/main.py"
+alias launcher="conda activate launcher; python ~/workspace/proj_launcher/python3.11libs/main.py"
 
 # Example autostart for a new tmux session
 if status is-interactive
